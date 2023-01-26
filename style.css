@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+header {
+    background-color: rgb(0, 132, 255);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container img {
+    float: left;
+    height: 70px;
+    width: auto;
+}
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2px;
+}
+.header-block {
+    background-color: rgb(0, 132, 255);
+    color: white;
+    height: 40px;
+    font-size: 24px;
+    padding: 20px;
+}
+.header-block:hover {
+    background-color: rgb(0, 112, 216);
+}
+.header-block a {
+    text-decoration: none;
+    color: white;
+}
