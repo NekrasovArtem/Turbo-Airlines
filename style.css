@@ -1,6 +1,9 @@
 body {
     background-color: white;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 header {
     background-color: rgb(0, 132, 255);
@@ -28,6 +31,9 @@ header {
 .header-block {
     background-color: rgb(0, 132, 255);
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 40px;
     font-size: 24px;
     padding: 20px;
@@ -38,4 +44,76 @@ header {
 .header-block a {
     text-decoration: none;
     color: white;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    border: 1px solid red;
+}
+main h1 {
+    font-size: 40px;
+    text-align: center;
+}
+main a {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.booking-forms {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.booking-forms button {
+    width: 30%;
+    height: 30px;
+    align-self: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(0, 112, 216);
+}
+.booking-forms button:hover {
+    background-color: rgb(0, 132, 255);
+}
+main hr {
+    width: 50%;
+    height: 4px;
+    background-color: rgb(0, 112, 216);
+    border-radius: 10px;
+    border: 0;
+}
+.form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.block-price {
+    width: 400px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+    border: 1px solid rgb(175, 0, 0);
+}
+.block-chance {
+    width: 400px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+    border: 1px solid rgb(175, 0, 0);
+}
+input {
+    background-color: lightgray;
+    height: 20px;
+    font-size: 18px;
 }
