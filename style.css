@@ -36,7 +36,7 @@ header {
 .navigation a {
     text-decoration: none;
     color: rgba(0, 89, 172);
-    font-size: 2em;
+    font-size: 32px;
     padding: 18px;
 }
 .navigation a:hover {
@@ -224,11 +224,23 @@ footer {
     }
 }
 @media screen and (max-width: 700px) {
+    .navigation a {
+        font-size: 24px;
+    }
     main {
         width: 80%;
     }
+    main a {
+        font-size: 18px;
+    }
+    main h1 {
+        font-size: 24px;
+    }
     main hr {
         width: 70%;
+    }
+    ol {
+        font-size: 16px;
     }
     .button {
         width: 40%;
@@ -239,5 +251,8 @@ footer {
     .search-form input {
         height: 40px;
         width: 40%;
+    }
+    footer a {
+        font-size: 18px;
     }
 }
