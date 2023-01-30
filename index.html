@@ -6,64 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <!-- Начало шапки сайта -->
     <header>
-        <div class="header-container">
+        <section class="section">
             <div>
-                <a href="index.html"><img src="Content/logo.svg" alt="Turbo Airlines"></a>
+                <a href="index.html">
+                    <img src="Content/logo.svg" class="logo">
+                </a>
             </div>
-            <div class="menu">
-                <div class="header-block">
-                    <a href="#">Акции</a>
-                </div>
-                <div class="header-block">
-                    <a href="#">Поиск</a>
-                </div>
-                <div class="header-block head">
-                    <a href="#">Регистрация на рейс</a>
-                </div>
-            </div>
-        </div>
+            <div class="navigation">
+                <a href="#">Акции</a>
+                <a href="#">Поиск</a>
+                <a href="#">Регистрация на рейс</a>
+            </div>           
+        </section>
     </header>
     <!-- Конец шапки сайта -->
     <!-- Начало основного блока контента -->
     <main>
         <div class="booking-forms">
-            <h1>Принцип накопления бронирования<hr></h1>
+            <h1>Принцип накопления бронирования</h1>
             <div class="form">
                 <div class="price">
                     <a>Стоимость билета</a>
-                    <div class="block-price"></div>
-                    <input id="" type="number" min="1" max="31" name="date" placeholder="Дата">
+                    <div id="booking__form-price" class="block-price"></div>
+                    <input id="priceinput" type="number" min="1" max="31" name="date" placeholder="Дата">
                 </div>
                 <div class="price">
                     <a>Вероятность вылета</a>
-                    <div class="block-chance"></div>
-                    <input id="" type="number" min="1" max="48" name="number" placeholder="Кол-во бронирований">
+                    <div id="booking__form-prob" class="block-chance"></div>
+                    <input id="probinput" type="number" min="1" max="48" name="number" placeholder="Кол-во бронирований">
                 </div>
             </div>
-            <button>Проверить</button>
+            <button class="button" onclick="principles();">Проверить</button>
+            <hr>
         </div>
         <div class="trust">
-            <h1>Доверие компании<hr></h1>
-
+            <h1>Доверие компании</h1>
+            <div class="trust-form">
+                <ol type="1">
+                    <li>На нашем сайте легко найти авиабилет и забронировать его.</li>
+                    <li>Безопасная покупка билета с возможностью сделать возврат.</li>
+                    <li>Частые и выгодные акции.</li>
+                </ol>
+            </div>
+            <hr>
         </div>
         <div class="main-search">
-            <h1>Поиск<hr></h1>
+            <h1>Поиск</h1>
+            <div class="search-form">
+                <input type="text" placeholder="Откуда">
+                <input type="text" placeholder="Куда">
+                <input type="date">
+                <input type="date">
+                <input type="number" min="1" max="8" placeholder="Кол-во пассажиров">
+            </div>
+            <button class="button">Найти</button>
+            <hr>
         </div>
         <div class="stocks">
-            <h1>Акции<hr></h1>
+            <h1>Акции</h1>
+            <hr>
         </div>
         <div class="subscription">
-            <h1>Подписка<hr></h1>
+            <h1>Подписка</h1>
+            <div class="subs">
+                <input type="email" class="sub-input" name="email" placeholder="name@gmail.com" title="Введите почти">
+                <button class="sub-button">Подписаться</button>
+            </div>
+            <hr>
         </div>
     </main>
     <!-- Конец основного блока контента -->
     <!-- Начало подвала сайта -->
     <footer>
-
+        <div class="foot-container">
+            <div>
+                <a>Телефон “8 (800) 100-10-10” </a>
+            </div>
+            <div>
+                <a href="index.html">Главная</a>
+            </div>
+            <div>
+                <a href="#">Акции</a>
+            </div>
+            <div>
+                <a href="#">Поиск</a>
+            </div>
+            <div>
+                <a href="#">Регистрация на рейс</a>
+            </div>
+        </div>
     </footer>
     <!-- Конец подвала сайта -->
 </body>
