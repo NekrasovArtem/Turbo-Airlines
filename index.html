@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <script src="scripts.js"></script>
 </head>
 <body>
@@ -20,7 +20,8 @@
                     <img src="Content/logo.svg" class="logo">
                 </a>
             </div>
-            <div class="navigation">
+            <div class="navigation" id="myNavigation">
+                <a class="menu" href="javascript:void(0);" onclick="functionMenu()">Меню</a>
                 <a href="#">Акции</a>
                 <a href="#">Поиск</a>
                 <a href="#">Регистрация на рейс</a>
@@ -36,12 +37,12 @@
                 <div class="price">
                     <a>Стоимость билета</a>
                     <div id="booking__form-price" class="block-price"></div>
-                    <input id="priceinput" type="number" min="1" max="31" name="date" placeholder="Дата">
+                    <input class="field-input" id="priceinput" type="number" min="1" max="31" name="date" placeholder="Дата">
                 </div>
                 <div class="price">
                     <a>Вероятность вылета</a>
                     <div id="booking__form-prob" class="block-chance"></div>
-                    <input id="probinput" type="number" min="1" max="48" name="number" placeholder="Кол-во бронирований">
+                    <input class="field-input" id="probinput" type="number" min="1" max="48" name="number" placeholder="Кол-во бронирований">
                 </div>
             </div>
             <button class="button" onclick="principles();">Проверить</button>
@@ -61,11 +62,11 @@
         <div class="main-search">
             <h1>Поиск</h1>
             <div class="search-form">
-                <input type="text" placeholder="Откуда">
-                <input type="text" placeholder="Куда">
-                <input type="date">
-                <input type="date">
-                <input type="number" min="1" max="8" placeholder="Кол-во пассажиров">
+                <input class="field-input" type="text" placeholder="Откуда">
+                <input class="field-input" type="text" placeholder="Куда">
+                <input class="field-input" type="date">
+                <input class="field-input" type="date">
+                <input class="field-input" type="number" min="1" max="8" placeholder="Кол-во пассажиров">
             </div>
             <button class="button">Найти</button>
             <hr>
@@ -77,7 +78,7 @@
         <div class="subscription">
             <h1>Подписка</h1>
             <div class="subs">
-                <input type="email" class="sub-input" name="email" placeholder="name@gmail.com" title="Введите почти">
+                <input class="field-input" type="email" class="sub-input" name="email" placeholder="name@gmail.com" title="Введите почти">
                 <button class="sub-button">Подписаться</button>
             </div>
             <hr>

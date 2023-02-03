@@ -1,4 +1,14 @@
+// Функция скрытия навигационного меню в шапке
+function functionMenu() {
+    var x = document.getElementById("myNavigation");
+    if (x.className === "navigation") {
+        x.className += " responsive";
+    } else {
+        x.className = "navigation";
+    }
+}
 
+// Функция принципа накопления бронирований
 function principles(){
 
 	var price = document.getElementById('booking__form-price');

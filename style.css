@@ -27,6 +27,9 @@ header {
 .logo {
     height: 7vh;
 }
+.menu {
+    display: none;
+}
 .navigation {
     display: flex;
     gap: 2px;
@@ -47,7 +50,7 @@ main {
     justify-content: center;
     flex-direction: column;
     height: auto;
-    gap: 50px;
+    gap: 100px;
     background: rgba(255, 255, 255, 0.9);
 }
 main h1 {
@@ -163,6 +166,25 @@ input {
     width: 30%;
     height: 28px;
 }
+.field-input {
+    background-color: #fff;
+    background-clip: padding-box;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.field-input::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+.field-input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
 footer {
     display: flex;
     justify-content: center;
@@ -197,12 +219,32 @@ footer {
     }
     main hr {
         width: 40%;
-    }.search-form {
+    }
+    .search-form {
         width: 60%;
     }
     .search-form input {
         height: 40px;
         width: 40%;
+    }
+}
+@media screen and (max-width: 1480px) {
+    .menu {
+        display: block;
+    }
+    .navigation a:not(:first-child) {
+        display: none;
+    }
+    .navigation.responsive {position: relative;}
+    .navigation.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 }
 @media screen and (max-width: 1100px) {
@@ -224,6 +266,9 @@ footer {
     }
 }
 @media screen and (max-width: 700px) {
+    .navigation{
+        flex-direction: column;
+    }
     .navigation a {
         font-size: 24px;
     }
