@@ -153,10 +153,29 @@ input {
     height: 40px;
     width: 40%;
 }
+.stocks {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+}
+.stocks-blocks {
+    display: flex;
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.stock-block {
+}
 .subscription {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 .subs {
     display: flex;

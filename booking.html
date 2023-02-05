@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бронирование рейсов</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <!-- Начало шапки сайта -->
     <header>
-        <div class="header-container">
+        <section class="section">
             <div>
-                <a href="index.html"><img src="Content/logo.svg" alt="Turbo Airlines"></a>
+                <a href="index.html">
+                    <img src="Content/logo.svg" class="logo">
+                </a>
             </div>
-            <div class="menu">
-                <div class="header-block">
-                    <a href="#">Акции</a>
-                </div>
-                <div class="header-block">
-                    <a href="#">Поиск</a>
-                </div>
-                <div class="header-block head">
-                    <a href="#">Регистрация на рейс</a>
-                </div>
-            </div>
-        </div>
+            <div class="navigation" id="myNavigation">
+                <a class="menu" href="javascript:void(0);" onclick="functionMenu()">Меню</a>
+                <a href="#">Акции</a>
+                <a href="#">Поиск</a>
+                <a href="#">Регистрация на рейс</a>
+            </div>           
+        </section>
     </header>
     <!-- Конец шапки сайта -->
     <!-- Начало основного блока контента -->
