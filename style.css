@@ -50,7 +50,7 @@ main {
     justify-content: center;
     flex-direction: column;
     height: auto;
-    gap: 100px;
+    gap: 40px;
     background: rgba(255, 255, 255, 0.9);
 }
 main h1 {
@@ -69,6 +69,9 @@ main hr {
     border-radius: 10px;
     border: 0;
 }
+form {
+    text-align: center;
+}
 .booking-forms {
     display: flex;
     justify-content: center;
@@ -83,6 +86,7 @@ main hr {
     color: white;
     border-radius: 20px;
     background-color: rgb(0, 112, 216);
+    cursor: pointer;
 }
 .button:hover {
     background-color: rgb(0, 132, 255);
@@ -166,10 +170,54 @@ input {
     width: 90%;
     height: auto;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
     flex-direction: row;
+    align-self: center;
+    margin-bottom: 20px;
 }
 .stock-block {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 8px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    transition: 1s all;
+}
+.stock-block:hover {
+    transform: scale(1.1, 1.1);
+}
+.stock-block img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 380px;
+    height: 200px;
+}
+.stock-block h4 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+.stock-block p {
+    margin: 10px;
+    text-align: justify;
+}
+.detail {
+    font-size: 24px;
+    text-decoration: none;
+    color: inherit;
+    background-color: rgb(87, 221, 255);
+    width: 380px;
+    height: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.detail div {
+    padding: 5px;
 }
 .subscription {
     display: flex;
@@ -190,7 +238,8 @@ input {
     background-clip: padding-box;
     padding: 0.375rem 0.75rem;
     border: 1px solid #bdbdbd;
-    border-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .field-input::placeholder {
@@ -214,9 +263,10 @@ footer {
     font-size: 1.8em;
 }
 .foot-container {
+    width: 60%;
     margin-top: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
