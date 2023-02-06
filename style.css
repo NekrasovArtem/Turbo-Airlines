@@ -234,6 +234,7 @@ input {
     height: 28px;
 }
 .field-input {
+    height: 30px;
     background-color: #fff;
     background-clip: padding-box;
     padding: 0.375rem 0.75rem;
