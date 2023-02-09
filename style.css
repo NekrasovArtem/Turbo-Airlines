@@ -78,13 +78,28 @@ main hr {
 }
 .flight-block {
     display: flex;
-    justify-content: center;
     background-color: white;
     border-radius: 1.2rem;
     box-shadow: 0 0 10px black;
     width: 1000px;
     height: 200px;
     margin-bottom: 20px;
+}
+.flight-block button {
+    color: rgb(0, 48, 94);
+    font-weight: 600;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(117, 197, 235);
+    box-shadow: 0 -3px rgb(44, 135, 177) inset;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.flight-block button:hover {
+    background-color: rgb(42, 137, 182);
+    color: rgb(201, 228, 253);
 }
 .price-booking {
     display: flex;
@@ -95,10 +110,81 @@ main hr {
     font-size: 30px;
     border-right: 4px solid rgb(0, 65, 126);
 }
-.block-booking {
-    width: 800px;
+.block-booking-body {
+    width: 700px;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.segment-probability {
+    margin-top: 20px;
+}
+.block-booking-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.segment-left {
+    width: 110px;
+    text-align: left;
+    font-size: 18px;
+}
+.segment-middle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.segment-right {
+    width: 110px;
+    text-align: right;
+    font-size: 18px;
+}
+.segment-title-time {
+    font-size: 36px;
+}
+.segment-path {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+.segment-duration {
+    text-align: center;
+    font-size: 18px;
+    left: 0;
+    right: 0;
+}
+.segment-line {
+    width: 300px;
+    background-color: #bdbdbd;
+    height: 5px;
+    border-radius: 2.5px;
+    flex: 1 0 20px;
+    border: 1px solid transparent;
+    background-color: #cdd4de;
+    text-align: center;
+}
+.segment_plane_up, .segment_plane_down {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 80px;
+}
+.span {
+    text-align: center;
+    font-weight: 600;
+}
+.plane_up, .plane_down {
+    width: 40px;
+    height: 40px;
 }
 form {
     text-align: center;
@@ -295,7 +381,7 @@ footer {
     font-size: 1.8em;
 }
 .foot-container {
-    width: 60%;
+    width: 1300px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
