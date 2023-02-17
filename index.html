@@ -8,25 +8,22 @@
     <title>Главная страница</title>
     <!-- Подключение CSS-файла -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- ПОдключение шрифта -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <!-- Подключение скриптов JavaScritp -->
     <script src="scripts.js"></script>
 </head>
 <body>
     <!-- Начало шапки сайта -->
     <header>
+        <!-- Контейнер шапки -->
         <section class="section">
+            <!-- Логотип компании -->
             <div>
                 <a href="index.html">
                     <img src="Content/logo.svg" class="logo">
                 </a>
             </div>
-            <!-- Адаптивное навигационное меню -->
+            <!-- Навигационное меню -->
             <div class="navigation" id="myNavigation">
-                <a class="menu" href="javascript:void(0);" onclick="functionMenu()">Меню</a>
                 <a href="#">Акции</a>
                 <a href="#">Поиск</a>
                 <a href="#">Регистрация на рейс</a>
@@ -39,6 +36,7 @@
         <!-- Блок принципа накопления бронирований -->
         <div class="booking-forms">
             <h1>Принцип накопления бронирования</h1>
+            <!-- Контейнер формы принципа -->
             <div class="form">
                 <div class="price">
                     <a>Стоимость билета</a>
@@ -51,12 +49,14 @@
                     <input class="field-input" id="probinput" type="number" min="1" max="48" name="number" placeholder="Кол-во бронирований">
                 </div>
             </div>
+            <!-- Кнопка, которая по клику запускает функцию в JavaScript -->
             <button class="button" onclick="principles();">Проверить</button>
             <hr>
         </div>
         <!-- Блок о доверие компании -->
         <div class="trust">
             <h1>Доверие компании</h1>
+            <!-- Контейнер формы о доверие компании -->
             <div class="trust-form">
                 <ol type="1">
                     <li>На нашем сайте легко найти авиабилет и забронировать его.</li>
@@ -69,6 +69,7 @@
         <!-- Блок поиска рейсов -->
         <div class="main-search">
             <h1>Поиск</h1>
+            <!-- Контейнер формы поиска рейсов -->
             <div class="search-form">
                 <input class="field-input" type="text" placeholder="Откуда" id="fieldFrom">
                 <input class="field-input" type="text" placeholder="Куда" id="fieldTo">
@@ -76,6 +77,7 @@
                 <input class="field-input" type="date" id="fieldDataTo">
                 <input class="field-input" type="number" min="1" max="8" placeholder="Кол-во пассажиров" id="fieldPassenger">
             </div>
+            <!-- Кнопка, открывающая другую страницу -->
             <form action="search.html">
                 <button class="button serach-button" href="search.html">Найти</button>
             </form>
@@ -87,52 +89,64 @@
             <div class="stocks-blocks">
                 <!-- Блок первой акции -->
                 <div class="stock-block">
+                    <!-- Картинка акции -->
                     <div>
                         <img src="Content/stock1.jpg" alt="Семейный счет">
                     </div>
+                    <!-- Описание акции -->
                     <div>
                         <h4>Семейный счет</h4>
                         <p>Копите мили на свой счет за каждого члена семьи.</p>
                     </div>
+                    <!-- Кнопка для подробного ознакомления -->
                     <a class="detail" href="#">
                         <div>Подробнее</div>
                     </a>
                 </div>
                 <!-- Блок второй акции -->
                 <div class="stock-block">
+                    <!-- Картинка акции -->
                     <div>
                         <img src="Content/stock1.jpg" alt="Семейный счет">
                     </div>
+                    <!-- Описание акции -->
                     <div>
                         <h4>Семейный счет</h4>
                         <p>Копите мили на свой счет за каждого члена семьи.</p>
                     </div>
+                    <!-- Кнопка для подробного ознакомления -->
                     <a class="detail" href="#">
                         <div>Подробнее</div>
                     </a>
                 </div>
                 <!-- Блок третьей акции -->
                 <div class="stock-block">
+                    <!-- Картинка акции -->
                     <div>
                         <img src="Content/stock1.jpg" alt="Семейный счет">
                     </div>
+                    <!-- Описание акции -->
                     <div>
                         <h4>Семейный счет</h4>
                         <p>Копите мили на свой счет за каждого члена семьи.</p>
                     </div>
+                    <!-- Кнопка для подробного ознакомления -->
                     <a class="detail" href="#">
                         <div>Подробнее</div>
                     </a>
                 </div>
                 <!-- Блок четвертой акции -->
                 <div class="stock-block">
+                    <!-- Картинка акции -->
                     <div>
                         <img src="Content/stock1.jpg" alt="Семейный счет">
                     </div>
+                    <!-- Описание акции -->
                     <div>
                         <h4>Семейный счет</h4>
                         <p>Копите мили на свой счет за каждого члена семьи.</p>
                     </div>
+                    <!-- Кнопка для подробного ознакомления -->
                     <a class="detail" href="#">
                         <div>Подробнее</div>
                     </a>
@@ -143,6 +157,7 @@
         <!-- Блок подписки на закрытые акции -->
         <div class="subscription">
             <h1>Подписка</h1>
+            <!-- Контейнер формы закрытых акций -->
             <div class="subs">
                 <input class="sub-input field-input" type="email" name="email" placeholder="name@gmail.com" title="Введите почти">
                 <button class="sub-button">Подписаться</button>
@@ -153,18 +168,23 @@
     <!-- Начало подвала сайта -->
     <footer>
         <div class="foot-container">
+            <!-- Первая колонка -->
             <div>
                 <a>8 (800) 100-10-10</a>
             </div>
+            <!-- Вторая колонка -->
             <div>
                 <a href="index.html">Главная</a>
             </div>
+            <!-- Третья колонка -->
             <div>
                 <a href="#">Акции</a>
             </div>
+            <!-- Четвертая колонка -->
             <div>
                 <a href="#">Поиск</a>
             </div>
+            <!-- Пятая колонка -->
             <div>
                 <a href="#">Регистрация на рейс</a>
             </div>
